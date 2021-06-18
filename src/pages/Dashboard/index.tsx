@@ -2,7 +2,7 @@ import React from 'react';
 
 import logoImg from '../../assets/logo.svg';
 
-import { Title, Form } from './styles';
+import { Title, Form, Repositories } from './styles';
 
 const Dashboard: React.FC = () => (
   <>
@@ -13,6 +13,19 @@ const Dashboard: React.FC = () => (
       <input placeholder='Digite o nome do repositório' />
       <button type='submit'>Pesquisar</button>
     </Form>
+
+    <Repositories>
+      <a href="#">
+        <img
+          src="https://avatars.githubusercontent.com/u/85137178?s=400&u=ed3e4733d55fafc4e98c4d7f0d342092d57cc177&v=4"
+          alt="Alex Paris"
+        />
+        <div>
+          <strong>rockeatseat/unform</strong>
+          <p>Easy peasy highly scalable ReactJS & React Native Forms!</p>
+        </div>
+      </a>
+    </Repositories>
   </>
 );
 
